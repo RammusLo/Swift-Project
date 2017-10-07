@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet var optionC: UIButton!
     @IBOutlet var optionD: UIButton!
     
-<<<<<<< HEAD
+
     let questions = ["What year was Declaration of Independence Signed?", "Where is North Korea in terms of China?", "How long does it take for light from the sun to reach Earth?", "What is the powerhouse of the cell?", "What is the state with the most lakes?"]
     let answers = [
                     ["1767", "1776", "1492", "1849"],
@@ -34,28 +34,19 @@ class ViewController: UIViewController {
                             4: 3
                          ]
     
-=======
-    var questions = ["What year was Declaration of Independence Signed?", "Where is North Korea in terms of China?", "How long does it take for light from the sun to reach Earth?"]
-    var answers = [
-                    ["1767", "1776", "1492", "1849"],
-                    ["North", "South", "East", "West"],
-                    ["8 minutes", "8 seconds", "8 hours", "instant"]
-                  ]
->>>>>>> 95846e21b700d6445f3cb11dda0f4f9add728f4d
+    
     var questionIndex = 0;
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         questionLabel.text = questions[questionIndex]
-<<<<<<< HEAD
-        
+
         optionA.setTitle(answers[questionIndex][0], for: .normal)
         optionB.setTitle(answers[questionIndex][1], for: .normal)
         optionC.setTitle(answers[questionIndex][2], for: .normal)
         optionD.setTitle(answers[questionIndex][3], for: .normal)
-=======
->>>>>>> 95846e21b700d6445f3cb11dda0f4f9add728f4d
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,7 +54,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-<<<<<<< HEAD
+
     @IBAction func checkAnswer(_ sender: AnyObject) {
         if(sender.tag == correctAnswers[questionIndex]){
             nextQuestion()
@@ -84,14 +75,5 @@ class ViewController: UIViewController {
         optionD.setTitle(answers[questionIndex][3], for: .normal)
 
     }
-    
-    //add scorekeeping
-    
-=======
-    @IBAction func checkAnswer (sender: AnyObject) {
-        
-        
-    }
->>>>>>> 95846e21b700d6445f3cb11dda0f4f9add728f4d
 }
 
